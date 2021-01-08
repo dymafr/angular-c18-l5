@@ -20,7 +20,7 @@ import { Component, OnInit } from "@angular/core";
       transition(
         ":enter",
         query("li", [
-          style({ opacity: 0, transform: "translateX(-10px" }),
+          style({ opacity: 0, transform: "translateX(-100px" }),
           stagger(-50, animate(400))
         ])
       )
