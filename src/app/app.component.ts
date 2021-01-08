@@ -21,7 +21,7 @@ import { Component, OnInit } from "@angular/core";
         ":enter",
         query("li", [
           style({ opacity: 0, transform: "translateX(-100px" }),
-          stagger(-50, animate(400))
+          stagger(-30, animate("500ms ease-in"))
         ])
       )
     ])
