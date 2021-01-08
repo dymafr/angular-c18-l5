@@ -19,9 +19,11 @@ import { Component, OnInit } from "@angular/core";
     trigger("list", [
       transition(
         ":enter",
-        query("li", style({ opacity: 0, transform: "translateX(-10px" }))
-      ),
-      stagger(-1000, animate(1000))
+        query("li", [
+          style({ opacity: 0, transform: "translateX(-10px" }),
+          stagger(-50, animate(400))
+        ])
+      )
     ])
   ]
 })
